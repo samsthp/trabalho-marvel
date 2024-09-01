@@ -1,0 +1,109 @@
+body {
+    text-align: center;
+    margin: auto;
+    background-color: black;
+}
+
+header h1{
+    color: hsl(241, 100%, 18%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+header p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0,2rem;
+    color: hwb(239 0% 64%);
+}
+header{
+    background-color: rgb(88, 0, 0);
+}
+.inicio{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+.inicio h2{
+    font-size: 170%
+}
+.inicio p{
+    font-size: 125%;
+    padding-bottom: 3%;
+}
+.thunder{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+.thunder h2{
+    font-size: 120%;
+    text-align: left;
+    margin-left: 5%;
+}
+.thunder p{
+    font-size: 100%;
+    padding: 3%;
+}
+.Quarteto {
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+.Quarteto h2{
+    font-size: 120%;
+    text-align: left;
+    margin-left: 5%;
+}
+.Quarteto p{
+    font-size: 100%;
+    padding: 3%;
+}
+.guardioes{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+.guardioes h2{
+    font-size: 120%;
+    text-align: left;
+    margin-left: 5%;
+}
+.guardioes p{
+    font-size: 100%;
+    padding: 3%;
+}
+.xmen{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+.xmen h2{
+    text-align: left;
+    margin-left: 5%;
+    font-size: 120%;
+}
+.xmen p{
+    font-size: 100%;
+    padding: 3%;
+}
+.vingadores{
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+}
+.vingadores h2{
+    text-align: left;
+    margin-left: 5%;
+    font-size: 120%;
+}
+.vingadores p{
+    font-size: 100%;
+    padding: 3%;
+}
+footer{
+    color: white;
+    background-color: navy;
+    margin: 0;
+}
