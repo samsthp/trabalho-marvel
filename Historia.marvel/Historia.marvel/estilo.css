@@ -58,7 +58,7 @@ a:hover {
     background-color: black; 
 }
 
-.corner-trigger {
+.marvel {
     position: fixed;
     top: 0;
     right: 0;
@@ -81,6 +81,6 @@ a:hover {
     transition: opacity 0s; 
 }
 
-.corner-trigger:hover ~ .marvel-logo {
+.marvel:hover ~ .marvel-logo {
     opacity: 1; 
 }
