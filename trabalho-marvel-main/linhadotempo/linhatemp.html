@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linha do Tempo dos Heróis da Marvel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Linha do Tempo dos Heróis da Marvel</h1>
+    </header>
+
+    <main>
+        <section class="filters">
+            <button class="filter-button" onclick="filterTimeline('all')">Mostrar Todos</button>
+            <input type="text" id="search-input" placeholder="Pesquisar por nome do filme">
+            <button onclick="searchTimeline()">Pesquisar</button>
+        </section>
+
+        <section class="timeline">
+            <article class="timeline-item left" data-year="2008" data-type="hero">
+                <div class="timeline-content">
+                    <h2>2008 - Homem de Ferro</h2>
+                    <p>Tony Stark constrói seu primeiro traje do Homem de Ferro, marcando o início do Universo Cinematográfico Marvel. Ele assume o papel de herói ao usar sua armadura de alta tecnologia para enfrentar ameaças globais.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item right" data-year="2008" data-type="hero">
+                <div class="timeline-content">
+                    <h2>2008 - O Incrível Hulk</h2>
+                    <p>Bruce Banner tenta encontrar uma cura para sua condição de Hulk enquanto enfrenta a ameaça do Abominável. Este filme explora a luta interna de Banner e o impacto de sua transformação no seu cotidiano.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item left" data-year="2011" data-type="hero">
+                <div class="timeline-content">
+                    <h2>2011 - Thor</h2>
+                    <p>Thor, o Deus do Trovão, é banido para a Terra e se torna um dos Vingadores. Ele precisa provar seu valor e reconquistar seu lugar em Asgard, enquanto enfrenta o destrutivo Loki.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item right" data-year="2011" data-type="hero">
+                <div class="timeline-content">
+                    <h2>2011 - Capitão América: O Primeiro Vingador</h2>
+                    <p>Steve Rogers se transforma no Capitão América durante a Segunda Guerra Mundial após receber o Soro do Super Soldado. Ele luta contra a Hydra e seu líder, o Caveira Vermelha.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item left" data-year="2012" data-type="evento">
+                <div class="timeline-content">
+                    <h2>2012 - Os Vingadores</h2>
+                    <p>Os heróis mais poderosos da Terra se juntam para enfrentar a ameaça de Loki e seu exército Chitauri. A equipe deve aprender a trabalhar junta para salvar o planeta.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item right" data-year="2013" data-type="hero">
+                <div class="timeline-content">
+                    <h2>2013 - Homem de Ferro 3</h2>
+                    <p>Tony Stark enfrenta o Mandarim e deve lidar com as consequências de seus problemas pessoais e a constante ameaça de novos inimigos. Ele reflete sobre seu papel como herói e seu futuro.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item left" data-year="2014" data-type="hero">
+                <div class="timeline-content">
+                    <h2>2014 - Guardiões da Galáxia</h2>
+                    <p>Um grupo de foras-da-lei intergalácticos se une para impedir que um vilão destrua o universo. Peter Quill e seus novos aliados enfrentam desafios enquanto formam uma equipe improvável.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item right" data-year="2015" data-type="evento">
+                <div class="timeline-content">
+                    <h2>2015 - Vingadores: Era de Ultron</h2>
+                    <p>Os Vingadores enfrentam Ultron, uma inteligência artificial com planos de exterminar a humanidade. A equipe deve trabalhar junto para parar a ameaça e lidar com as consequências.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item left" data-year="2019" data-type="hero">
+                <div class="timeline-content">
+                    <h2>2019 - Capitã Marvel</h2>
+                    <p>Carol Danvers se torna a Capitã Marvel e descobre suas verdadeiras origens e o papel crucial que desempenhará no futuro do universo. Ela enfrenta uma guerra intergaláctica e lida com sua identidade.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item right" data-year="2019" data-type="evento">
+                <div class="timeline-content">
+                    <h2>2019 - Vingadores: Ultimato</h2>
+                    <p>Os Vingadores restantes tentam reverter o estalo de Thanos e restaurar a ordem no universo. Eles enfrentam grandes desafios e sacrifícios para corrigir os erros e salvar seus aliados.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item left" data-year="2021" data-type="evento">
+                <div class="timeline-content">
+                    <h2>2021 - WandaVision</h2>
+                    <p>Wanda Maximoff e Vision vivem uma vida idealizada de subúrbio, mas logo se vêem presos em uma realidade alternativa. A série explora a dor de Wanda e o impacto dos eventos de "Vingadores: Ultimato".</p>
+                </div>
+            </article>
+
+            <article class="timeline-item right" data-year="2021" data-type="evento">
+                <div class="timeline-content">
+                    <h2>2021 - Falcão e o Soldado Invernal</h2>
+                    <p>Sam Wilson e Bucky Barnes enfrentam novas ameaças e desafios após a aposentadoria de Steve Rogers. Eles lidam com questões de legado e justiça, enquanto enfrentam novos vilões.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item left" data-year="2021" data-type="evento">
+                <div class="timeline-content">
+                    <h2>2021 - Loki</h2>
+                    <p>Loki explora o multiverso e enfrenta as consequências de suas ações. Ele lida com novas variantes de si mesmo e uma organização secreta que controla o tempo.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item right" data-year="2021" data-type="evento">
+                <div class="timeline-content">
+                    <h2>2021 - What If...?</h2>
+                    <p>A série explora diferentes realidades alternativas do MCU, mostrando como pequenos eventos podem alterar drasticamente o curso do universo.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item left" data-year="2022" data-type="hero">
+                <div class="timeline-content">
+                    <h2>2022 - Miss Marvel</h2>
+                    <p>Kamala Khan, uma adolescente com poderes de polimorfismo, se torna a Miss Marvel e enfrenta novos desafios. Ela explora sua identidade e a responsabilidade de ser uma heroína.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item right" data-year="2022" data-type="evento">
+                <div class="timeline-content">
+                    <h2>2022 - Thor: Amor e Trovão</h2>
+                    <p>Thor enfrenta novos desafios quando uma ameaça intergaláctica, o Deus Carniceiro, surge. Junto com Jane Foster, que se tornou a Poderosa Thor, ele deve proteger o universo e enfrentar questões pessoais.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item left" data-year="2022" data-type="evento">
+                <div class="timeline-content">
+                    <h2>2022 - Pantera Negra: Wakanda Para Sempre</h2>
+                    <p>Wakanda enfrenta novos desafios e a continuidade do legado do Pantera Negra é explorada. O filme aborda o luto e a transição de liderança em Wakanda.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item right" data-year="2023" data-type="evento">
+                <div class="timeline-content">
+                    <h2>2023 - Secret Invasion</h2>
+                    <p>Nick Fury e seus aliados enfrentam uma invasão de Skrulls infiltrados na Terra. A série explora temas de espionagem e confiança, com grandes revelações sobre os Skrulls.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item left" data-year="2023" data-type="evento">
+                <div class="timeline-content">
+                    <h2>2023 - Guardians of the Galaxy Vol. 3</h2>
+                    <p>Os Guardiões da Galáxia enfrentam novos desafios e aventuras no terceiro filme da série. Eles lidam com questões do passado e enfrentam ameaças intergalácticas.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item right" data-year="2024" data-type="hero">
+                <div class="timeline-content">
+                    <h2>2024 - Blade</h2>
+                    <p>Eric Brooks, também conhecido como Blade, luta contra vampiros enquanto busca vingança por sua mãe. Ele é um caçador de vampiros com habilidades sobre-humanas e um forte senso de justiça.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item left" data-year="2024" data-type="hero">
+                <div class="timeline-content">
+                    <h2>2024 - Nova</h2>
+                    <p>Richard Rider se torna Nova, um dos últimos sobreviventes da Tropa Nova. Ele defende o universo contra ameaças cósmicas e assume um papel vital na proteção do cosmos.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item right" data-year="2025" data-type="hero">
+                <div class="timeline-content">
+                    <h2>2025 - Wonder Man</h2>
+                    <p>Simon Williams, também conhecido como Wonder Man, usa seus poderes sobre-humanos para lutar contra ameaças e explorar seu papel como herói. Ele é conhecido por sua força e resistência incríveis.</p>
+                </div>
+            </article>
+
+            <article class="timeline-item left" data-year="2025" data-type="hero">
+                <div class="timeline-content">
+                    <h2>2025 - White Tiger</h2>
+                    <p>Ava Ayala assume o manto do White Tiger, uma heroína com habilidades aprimoradas e um forte senso de justiça. Ela luta contra o crime e protege os inocentes com suas habilidades de combate.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="video-section">
+            <h2>Linha Temporal dos Heróis</h2>
+            <iframe src="https://www.youtube.com/embed/3UwKMcAi8qY" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Linha do Tempo dos Heróis da Marvel</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.timeline-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    document.querySelectorAll('.timeline-item.highlight').forEach(i => i.classList.remove('highlight'));
+                    item.classList.add('highlight');
+                    item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                });
+            });
+
+            window.filterTimeline = (type) => {
+                document.querySelectorAll('.timeline-item').forEach(item => {
+                    if (type === 'all' || item.getAttribute('data-type') === 'hero') {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            };
+
+            window.searchTimeline = () => {
+                const searchInput = document.getElementById('search-input').value.toLowerCase();
+                document.querySelectorAll('.timeline-item').forEach(item => {
+                    const title = item.querySelector('.timeline-content h2').textContent.toLowerCase();
+                    if (title.includes(searchInput)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            };
+
+            window.addEventListener('load', () => {
+                document.querySelectorAll('.timeline-item').forEach((item, index) => {
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, index * 150);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
