@@ -12,9 +12,9 @@ body {
 header {
     position: relative;
     text-align: center;
-    padding: 200px 0;
-    color: #ffffff;
-    background: url('img\ cabeçalho.jpg.webp') no-repeat center center;
+    padding: 300px 0px;
+    color: #ff0000;
+    background-image: url('tilmeline.webp');
     background-size: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
